@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="left-side-wrap"><div class="logo"><img class='odin-logo' src="odin-lined.png" alt="Odin"><div class="odin-text">Odin</div></div></div></div>
+    <div class="right-side-wrap"><div class="top-text"><p>This is not real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
+    <h1>You <em>know</em> what you want to.</h1></div>
+    <form action="" class="form" id="form" method="post" novalidate >
+       
+        
+            <h1>Let's do this!</h1>
+            <div class="inputs">
+                <div class="left-inputs">
+                    <div class="input"><label for="first-name">First name</label> <input  required type="text" id="first-name" name="first-name" placeholder="Oleksandr"></div>
+                    <div class="input"><label for="email">email</label> <input  required type="email" id="email" name="email" placeholder="oleksandr@sit.home"></div>
+                    <div class="input"><label for="password">Password</label><input  required  type="password" id="password" name="password" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" onkeyup='check(), passwordCheck()' ><span id='message1'></span></div>
+                </div>
+                <div class="right-inputs">
+                    <div class="input"><label for="last-name">Last name</label><input  required type="text" id="last-name" name="last-name" placeholder="Anderson"></div>
+                    <div class="input"><label for="phone">Phone number</label><input  required type="tel" id="phone" name="phone" placeholder="+3529349203" pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$"></div>
+                    <div class="input"><label for="confirm-password">Confirm password</label><input required type="password" id="confirm-password" name="confirm-password" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" onkeyup='check()'><span id='message'></span></div>
+                </div>
+           
+        </div>
+        
+    </form>
+    <div class="bottom-right">
+        <button type="submit" form="form" class="create"value="Create account">Create account</button>
+     <p>Already have an account? <a href="">Log in</a></p>
+    </div>
+
+</div>
+</body>
+</html>
